@@ -11,8 +11,8 @@ workspace:
   base: /go
   path: src/github.com/drone/drone-go
 
-pipeline:
-  build:
+steps:
+  - name: build:
     image: golang:1.6
     commands:
       - go test -v github.com/drone/drone-go/drone
